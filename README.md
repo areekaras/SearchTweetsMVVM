@@ -1,4 +1,4 @@
-# SearchTweetsMVVMC
+# SearchTweetsMVVM
 * Twitter Client Search API integration
 * MVVM design architectural pattern
 * Developer : Shibili Areekara
