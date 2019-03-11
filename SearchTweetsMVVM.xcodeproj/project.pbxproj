@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E5FD8DBC6732BC80894D4ED /* Pods_SearchTweetsMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59E2352DA351096DD5CA8CA /* Pods_SearchTweetsMVVMTests.framework */; };
+		6023280922364B80000493B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023280822364B80000493B2 /* AppDelegate.swift */; };
+		6023281322364B80000493B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6023281122364B80000493B2 /* LaunchScreen.storyboard */; };
+		6023281E22364B80000493B2 /* SearchTweetsMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023281D22364B80000493B2 /* SearchTweetsMVVMTests.swift */; };
+		6023282C2236503E000493B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023282A2236503D000493B2 /* Request.swift */; };
+		6023282D2236503E000493B2 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023282B2236503E000493B2 /* DataModels.swift */; };
+		6023283022365077000493B2 /* Date+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023282F22365077000493B2 /* Date+format.swift */; };
+		60232835223650E1000493B2 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60232834223650E1000493B2 /* TweetViewModel.swift */; };
+		602328382236513A000493B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602328372236513A000493B2 /* Main.storyboard */; };
+		6023283C22365185000493B2 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023283B22365185000493B2 /* CustomImageView.swift */; };
+		6023283F2236518F000493B2 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023283D2236518F000493B2 /* TweetTableViewCell.swift */; };
+		602328402236518F000493B2 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6023283E2236518F000493B2 /* TweetTableViewCell.xib */; };
+		60232844223651E7000493B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60232842223651E7000493B2 /* LoginViewController.swift */; };
+		60232845223651E7000493B2 /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60232843223651E7000493B2 /* TweetsTableViewController.swift */; };
+		6082A529223657CC00DF722E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6082A528223657CC00DF722E /* Assets.xcassets */; };
+		87BB67495CC89964332E753B /* Pods_SearchTweetsMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9A629334DCD610576B2C0 /* Pods_SearchTweetsMVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6023281A22364B80000493B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 602327FD22364B80000493B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6023280422364B80000493B2;
+			remoteInfo = SearchTweetsMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FA9A629334DCD610576B2C0 /* Pods_SearchTweetsMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchTweetsMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BA1D5174D5F6DE348A2887 /* Pods-SearchTweetsMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTweetsMVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchTweetsMVVMTests/Pods-SearchTweetsMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6023280522364B80000493B2 /* SearchTweetsMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchTweetsMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6023280822364B80000493B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6023281222364B80000493B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6023281922364B80000493B2 /* SearchTweetsMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTweetsMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6023281D22364B80000493B2 /* SearchTweetsMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTweetsMVVMTests.swift; sourceTree = "<group>"; };
+		6023281F22364B80000493B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6023282A2236503D000493B2 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6023282B2236503E000493B2 /* DataModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		6023282F22365077000493B2 /* Date+format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+format.swift"; sourceTree = "<group>"; };
+		60232834223650E1000493B2 /* TweetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
+		602328372236513A000493B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6023283B22365185000493B2 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		6023283D2236518F000493B2 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		6023283E2236518F000493B2 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		60232842223651E7000493B2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		60232843223651E7000493B2 /* TweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsTableViewController.swift; sourceTree = "<group>"; };
+		6082A528223657CC00DF722E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6082A52A223657EA00DF722E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A73E194D25706D2861C8CDF /* Pods-SearchTweetsMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTweetsMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchTweetsMVVMTests/Pods-SearchTweetsMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D6938BC8F26977BC152067D /* Pods-SearchTweetsMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTweetsMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		C93BC6B45641B36ED9E444BC /* Pods-SearchTweetsMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTweetsMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		D59E2352DA351096DD5CA8CA /* Pods_SearchTweetsMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchTweetsMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6023280222364B80000493B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87BB67495CC89964332E753B /* Pods_SearchTweetsMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6023281622364B80000493B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5FD8DBC6732BC80894D4ED /* Pods_SearchTweetsMVVMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		602327FC22364B80000493B2 = {
+			isa = PBXGroup;
+			children = (
+				6023280722364B80000493B2 /* SearchTweetsMVVM */,
+				6023281C22364B80000493B2 /* SearchTweetsMVVMTests */,
+				6023280622364B80000493B2 /* Products */,
+				AEDD3C265F5031DAEADBFDA6 /* Pods */,
+				FE630C61CD7CC5784E96E32D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6023280622364B80000493B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6023280522364B80000493B2 /* SearchTweetsMVVM.app */,
+				6023281922364B80000493B2 /* SearchTweetsMVVMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6023280722364B80000493B2 /* SearchTweetsMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				6023280822364B80000493B2 /* AppDelegate.swift */,
+				6023282922365024000493B2 /* Model */,
+				60232833223650A0000493B2 /* ViewModel */,
+				6023283622365122000493B2 /* Views */,
+				60232841223651C6000493B2 /* Controllers */,
+				6082A52A223657EA00DF722E /* Info.plist */,
+			);
+			path = SearchTweetsMVVM;
+			sourceTree = "<group>";
+		};
+		6023281C22364B80000493B2 /* SearchTweetsMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				6023281D22364B80000493B2 /* SearchTweetsMVVMTests.swift */,
+				6023281F22364B80000493B2 /* Info.plist */,
+			);
+			path = SearchTweetsMVVMTests;
+			sourceTree = "<group>";
+		};
+		6023282922365024000493B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6023282B2236503E000493B2 /* DataModels.swift */,
+				6023282A2236503D000493B2 /* Request.swift */,
+				6023282E22365065000493B2 /* Extensions */,
+				6082A528223657CC00DF722E /* Assets.xcassets */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6023282E22365065000493B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6023282F22365077000493B2 /* Date+format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60232833223650A0000493B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60232834223650E1000493B2 /* TweetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6023283622365122000493B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				602328372236513A000493B2 /* Main.storyboard */,
+				6023281122364B80000493B2 /* LaunchScreen.storyboard */,
+				6023283922365160000493B2 /* CustomViews */,
+				6023283A2236516D000493B2 /* CustomTableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6023283922365160000493B2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				6023283B22365185000493B2 /* CustomImageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		6023283A2236516D000493B2 /* CustomTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6023283D2236518F000493B2 /* TweetTableViewCell.swift */,
+				6023283E2236518F000493B2 /* TweetTableViewCell.xib */,
+			);
+			path = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		60232841223651C6000493B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60232842223651E7000493B2 /* LoginViewController.swift */,
+				60232843223651E7000493B2 /* TweetsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEDD3C265F5031DAEADBFDA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D6938BC8F26977BC152067D /* Pods-SearchTweetsMVVM.debug.xcconfig */,
+				C93BC6B45641B36ED9E444BC /* Pods-SearchTweetsMVVM.release.xcconfig */,
+				12BA1D5174D5F6DE348A2887 /* Pods-SearchTweetsMVVMTests.debug.xcconfig */,
+				6A73E194D25706D2861C8CDF /* Pods-SearchTweetsMVVMTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE630C61CD7CC5784E96E32D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A629334DCD610576B2C0 /* Pods_SearchTweetsMVVM.framework */,
+				D59E2352DA351096DD5CA8CA /* Pods_SearchTweetsMVVMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6023280422364B80000493B2 /* SearchTweetsMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6023282222364B80000493B2 /* Build configuration list for PBXNativeTarget "SearchTweetsMVVM" */;
+			buildPhases = (
+				AD338B97B98B023120050E62 /* [CP] Check Pods Manifest.lock */,
+				6023282822364DD4000493B2 /* ShellScript */,
+				6023280122364B80000493B2 /* Sources */,
+				6023280222364B80000493B2 /* Frameworks */,
+				6023280322364B80000493B2 /* Resources */,
+				BC20FB8E20B209B76071B32F /* [CP] Embed Pods Frameworks */,
+				7C7E7299668A59E3028C9A71 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchTweetsMVVM;
+			productName = SearchTweetsMVVM;
+			productReference = 6023280522364B80000493B2 /* SearchTweetsMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6023281822364B80000493B2 /* SearchTweetsMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6023282522364B80000493B2 /* Build configuration list for PBXNativeTarget "SearchTweetsMVVMTests" */;
+			buildPhases = (
+				706F14D87FFEDD317AA1AE4D /* [CP] Check Pods Manifest.lock */,
+				6023281522364B80000493B2 /* Sources */,
+				6023281622364B80000493B2 /* Frameworks */,
+				6023281722364B80000493B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6023281B22364B80000493B2 /* PBXTargetDependency */,
+			);
+			name = SearchTweetsMVVMTests;
+			productName = SearchTweetsMVVMTests;
+			productReference = 6023281922364B80000493B2 /* SearchTweetsMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		602327FD22364B80000493B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Shibili Areekara";
+				TargetAttributes = {
+					6023280422364B80000493B2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					6023281822364B80000493B2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6023280422364B80000493B2;
+					};
+				};
+			};
+			buildConfigurationList = 6023280022364B80000493B2 /* Build configuration list for PBXProject "SearchTweetsMVVM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 602327FC22364B80000493B2;
+			productRefGroup = 6023280622364B80000493B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6023280422364B80000493B2 /* SearchTweetsMVVM */,
+				6023281822364B80000493B2 /* SearchTweetsMVVMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6023280322364B80000493B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6023281322364B80000493B2 /* LaunchScreen.storyboard in Resources */,
+				602328382236513A000493B2 /* Main.storyboard in Resources */,
+				6082A529223657CC00DF722E /* Assets.xcassets in Resources */,
+				602328402236518F000493B2 /* TweetTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6023281722364B80000493B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6023282822364DD4000493B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		706F14D87FFEDD317AA1AE4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchTweetsMVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7E7299668A59E3028C9A71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD338B97B98B023120050E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchTweetsMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC20FB8E20B209B76071B32F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM-frameworks.sh",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchTweetsMVVM/Pods-SearchTweetsMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6023280122364B80000493B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60232835223650E1000493B2 /* TweetViewModel.swift in Sources */,
+				60232845223651E7000493B2 /* TweetsTableViewController.swift in Sources */,
+				6023283C22365185000493B2 /* CustomImageView.swift in Sources */,
+				6023282D2236503E000493B2 /* DataModels.swift in Sources */,
+				6023282C2236503E000493B2 /* Request.swift in Sources */,
+				60232844223651E7000493B2 /* LoginViewController.swift in Sources */,
+				6023280922364B80000493B2 /* AppDelegate.swift in Sources */,
+				6023283022365077000493B2 /* Date+format.swift in Sources */,
+				6023283F2236518F000493B2 /* TweetTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6023281522364B80000493B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6023281E22364B80000493B2 /* SearchTweetsMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6023281B22364B80000493B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6023280422364B80000493B2 /* SearchTweetsMVVM */;
+			targetProxy = 6023281A22364B80000493B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6023281122364B80000493B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6023281222364B80000493B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6023282022364B80000493B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6023282122364B80000493B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6023282322364B80000493B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6938BC8F26977BC152067D /* Pods-SearchTweetsMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8L83HJTF5;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchTweetsMVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.SearchTweetsMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6023282422364B80000493B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93BC6B45641B36ED9E444BC /* Pods-SearchTweetsMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8L83HJTF5;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchTweetsMVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.SearchTweetsMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6023282622364B80000493B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BA1D5174D5F6DE348A2887 /* Pods-SearchTweetsMVVMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8L83HJTF5;
+				INFOPLIST_FILE = SearchTweetsMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.SearchTweetsMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchTweetsMVVM.app/SearchTweetsMVVM";
+			};
+			name = Debug;
+		};
+		6023282722364B80000493B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A73E194D25706D2861C8CDF /* Pods-SearchTweetsMVVMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8L83HJTF5;
+				INFOPLIST_FILE = SearchTweetsMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.SearchTweetsMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchTweetsMVVM.app/SearchTweetsMVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6023280022364B80000493B2 /* Build configuration list for PBXProject "SearchTweetsMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6023282022364B80000493B2 /* Debug */,
+				6023282122364B80000493B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6023282222364B80000493B2 /* Build configuration list for PBXNativeTarget "SearchTweetsMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6023282322364B80000493B2 /* Debug */,
+				6023282422364B80000493B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6023282522364B80000493B2 /* Build configuration list for PBXNativeTarget "SearchTweetsMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6023282622364B80000493B2 /* Debug */,
+				6023282722364B80000493B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 602327FD22364B80000493B2 /* Project object */;
+}

@@ -1,0 +1,24 @@
+PODS:
+  - SwiftLint (0.27.0)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.1):
+    - TwitterCore (>= 3.1.0)
+
+DEPENDENCIES:
+  - SwiftLint
+  - TwitterKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftLint
+    - TwitterCore
+    - TwitterKit
+
+SPEC CHECKSUMS:
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: 054005edf5350aa9074af74b41456e5a61e3f322
+
+PODFILE CHECKSUM: 19a72d396dbd71c60ccfd8fa17514cd406eea5a3
+
+COCOAPODS: 1.5.3
